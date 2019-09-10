@@ -4,43 +4,46 @@
     <meta charset="utf-8">
     <title>Josh Skousen - Home</title>
     <link rel="stylesheet" href="/style/master.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   </head>
   <body>
 <!--Header Bar-->
     <div class="header">
       <header>
         <div class="jsk_logo">
-          <img src="" alt="JSk">
+          <a href="#"><img src="./style/images/jsk logo white.png" alt="JSk"></a>
         </div>
         <h1>Josh Skousen</h1>
       </header>
     </div>
 <!--Navigation Menu-->
     <div class="menu">
-      <hr />
-      <nav>
-        <ul>
-          <li><a href="#" class="active"><h2>Home</h2></a></li>
-          <li><a href="./about.html"><h2>About</h2></a></li>
-          <li><a href="./projects.html"><h2>Projects</h2></a></li>
-          <li><a href="./experience.html"><h2>Experience</h2></a></li>
-          <li><a href="./contact.html"><h2>Contact</h2></a></li>
-        </ul>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">JSk</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./experience.html">Experience</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
       </nav>
-      <hr />
     </div>
 <!--About Section-->
     <div class="about_preview">
       <h2>About Me</h2>
       <p>This is a TL;DR of who I am.
-        <br>For more details, <a href="./about.html">click here!</a>
       </p>
+      <p class="info">For more details, <a class="btn btn-default" href="./about.html">click here!</a></p>
     </div>
 <!--Projects Section-->
     <div class="projects_preview">
       <h2>Projects</h2>
       <p>Here is just a handfull of my projects.
-        <br>To see a more complete collection, <a href="./projects.html">click here!</a>
       </p>
       <div class="projects_cards_preview">
         <ul>
@@ -49,15 +52,15 @@
           <li><i>project card placeholder</i></li>
         </ul>
       </div>
+      <p class="info">To see a more complete collection, <a class="btn btn-default" href="./projects.html">click here!</a></p>
     </div>
 <!--Experience Sections-->
     <div class="experience_preview">
       <h2>Work Experience</h2>
-      <p>For more details about my work experience, including references, <a href="./experience.html">click here!</a></p>
       <div class="work_experience_list_preview">
-        <ul>
+        <ul class="work">
           <!--Panda Express pt.1-->
-          <li><img src="" alt="Panda Express"><h3>Panda Express</h3>
+          <li class="well"><a href="https://www.pandaexpress.com"><img src="/style/images/Panda Express logo.png" class="media media-object" alt="Panda Express"></a><h3>Panda Express</h3>
             <ul>
               <li><b>Position -</b> Cashier</li>
               <li><b>Responsabilities -</b> ...</li>
@@ -66,7 +69,7 @@
             </ul>
           </li>
           <!--Panda Express pt.2-->
-          <li><img src="" alt="Panda Express"><h3>Panda Express</h3>
+          <li class="well"><a href="https://www.pandaexpress.com"><img src="/style/images/Panda Express logo.png" class="media media-object" alt="Panda Express"></a><h3>Panda Express</h3>
             <ul>
               <li><b>Position -</b> Shift Manager</li>
               <li><b>Responsabilities -</b> ...</li>
@@ -75,14 +78,14 @@
             </ul>
           </li>
         </ul>
+        <p class="info">For more details about my work experience, including references, <a class="btn btn-default" href="./experience.html">click here!</a></p>
       </div>
 
       <h2>Education</h2>
-      <p>For more details about my education, <a href="./experience.html">click here!</a></p>
       <div class="education_list_preview">
-        <ul>
+        <ul class="school">
           <!--BYU-->
-          <li><img src="" alt="BYU"><h3>Brigham Young University</h3>
+          <li class="well"><a href="https://www.byu.edu"><img src="/style/images/BYU logo circle.png" class="media media-object" alt="BYU"></a><h3>Brigham Young University</h3>
             <ul>
               <li><b>Major -</b> Computer Science</li>
               <li><b>Minors -</b> Design Thinking (emphasis in User Experience Design), Mathematics</li>
@@ -91,7 +94,7 @@
             </ul>
           </li>
           <!--UVU-->
-          <li><img src="" alt="UVU"><h3>Utah Valley University</h3>
+          <li class="well"><a href="https://www.uvu.edu"><img src="/style/images/UVU logo.jpg" class="media media-object uvu img-rounded" alt="UVU"></a><h3>Utah Valley University</h3>
             <ul>
               <li><b>Major -</b> General Education</li>
               <li><b>Skills Learned -</b> ...</li>
@@ -99,20 +102,20 @@
             </ul>
           </li>
           <!--YouTube-->
-          <li><img src="" alt="YouTube"><h3>YouTube</h3>
+          <li class="well"><a href="https://www.youtube.com"><img src="/style/images/YouTube logo.png" class="media media-object" alt="YouTube"></a><h3>YouTube</h3>
             <ul>
               <li><b>Topics -</b> Web Development, UI/UX Design, Graphic Design, Game Development, Conspiracy Theories</li>
               <li><b>Skills Learned -</b> HTML/CSS, Adobe Creative Cloud, Unity Engine</li>
             </ul>
           </li>
         </ul>
+        <p class="info">For more details about my education, <a class="btn btn-default" href="./experience.html">click here!</a></p>
       </div>
     </div>
 <!--Contact Section-->
     <div class="contact_preview">
       <h2>Contact Me</h2>
       <p>These are the most easy ways to contact me.
-        <br>For even more methods of contact, <a href="./contact.html">click right here!</a>
       </p>
       <div class="contact_list_preview">
         <div class="contact_card">
@@ -122,6 +125,7 @@
           </ul>
         </div>
       </div>
+      <p class="info">For even more methods of contact, <a class="btn btn-default" href="./contact.html">click right here!</a></p>
     </div>
 <!--Footer Bar-->
     <div class="footer">
@@ -130,5 +134,7 @@
         Josh Skousen - Copyright 2019 - All rights reserved
       </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   </body>
 </html>
