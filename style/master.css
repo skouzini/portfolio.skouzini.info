@@ -1,6 +1,7 @@
 body {
 margin: 0;
 padding: 0;
+width: 100%;
 }
 header {
   padding: 16px;
@@ -8,7 +9,7 @@ header {
 	height: 25vh;
   background: linear-gradient(-60deg, #feb236, #ff7b25, #6b5b95, #d64161);
   background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
+  animation: gradientBG 13s ease infinite;
 }
 @keyframes gradientBG {
 	0% {
@@ -21,39 +22,48 @@ header {
 		background-position: 0% 50%;
 	}
 }
+header .jsk_logo {
+  position: absolute;
+  left: 50px;
+  height: 25vh;
+  width: 100%;
+  overflow: hidden;
+}
 header h1 {
   width: 100%;
   position: relative;
-  top: 35%;
+  top: 50%;
   text-align: center;
   color: #fff;
   font-family: "Exo", sans-serif;
   font-size: 5vh;
+  font-weight: 400;
 }
-.menu .active {
-
+div p, h2 {
+  margin-left: 20px;
 }
-.menu {
+div .info {
+  text-align: right;
+}
+div ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  overflow: hidden;
-  background-color: #f3f3f3;
+  position: relative;
 }
-.menu ul {
-  width: 100%;
+.school, .work li {
+  width: 95%;
 }
-.menu li {
-  display: inline-block;
-  align-self: auto;
+li img {
+  float: left;
+  width: 100px;
+  margin-right: 20px;
 }
-.menu li a {
-  text-decoration: none;
-  padding: auto;
+li h3 {
+  margin-top: 0;
+}
+footer {
+  padding-left: 20px;
+  background-color: #707070;
+  color: #e5e5e5;
+  height: 25vh;
   text-align: center;
-  color: #666;
-}
-.menu .active, a:hover, a:active {
-  background-color: #e0e0e0;
 }
